@@ -1,6 +1,6 @@
 package org.launchcode;
 
-import org.launchcode.comparators.NameComparator;
+import org.launchcode.comparators.*;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ public class Main {
         ArrayList<City> cities = CityData.loadData();
 
         // TODO - Use different comparators here
-        NameComparator comparator = new NameComparator();
+        PopulationDensityComparator comparator = new PopulationDensityComparator();
         cities.sort(comparator);
 
         printCities(cities);
